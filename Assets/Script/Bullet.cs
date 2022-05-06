@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Bullet bullet = collision.gameObject.GetComponent<Bullet>();
-        if(bullet != null)
+        Ball ball = collision.gameObject.GetComponent<Ball>();
+        if(ball != null)
         {
-            Destroy(gameObject);
+            GameManager.ballCount--;
         }
     }
 }
