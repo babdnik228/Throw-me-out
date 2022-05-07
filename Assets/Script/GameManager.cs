@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private int ball;
+    [SerializeField] private int _timerGame;
     private void Start()
     {
         ballCount = ball;
@@ -16,9 +17,22 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        Timer();
+        
+    }
+    public void Timer()
+    {
+        _timerGame--; 
+    }
+    public void Result()
+    {
+        if(_timerGame == 0)
+        {
+            UIManager.sing_UI_Manager.DefeatResult();
+        }
         if(ballCount == 0)
         {
-            Debug.Log("Win");
+            UIManager.sing_UI_Manager.VictoryResult();
         }
     }
 }
