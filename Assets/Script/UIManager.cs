@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -8,9 +9,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _panel_pGame;
     [SerializeField] private GameObject _textGameVictory;
     [SerializeField] private GameObject _textGameDefeat;
+    [SerializeField] private Text _timer;
     private void Start()
     {
         sing_UI_Manager = this;
+    }
+    private void Update()
+    {
+        _timer.text = GameManager.sing_GameManager._timerGame.ToString();
     }
     public void GameObjectSetActiv()
     {
@@ -18,10 +24,12 @@ public class UIManager : MonoBehaviour
     }
     public void VictoryResult()
     {
+        _timer.gameObject.SetActive(false);
         _textGameVictory.SetActive(true);
     }
     public void DefeatResult()
     {
+        _timer.gameObject.SetActive(false);
         _textGameDefeat.SetActive(true);
     }
 
