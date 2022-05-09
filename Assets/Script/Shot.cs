@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
+    public static Shot shot_singl;
     [SerializeField]
     private float Power;
     [SerializeField]
     private GameObject bulletPrefab;
     private Camera mainCamera;
+    public static int bulletAmount = 2;
+    [SerializeField] private int bulletInsAmount;
     private void Start()
     {
+        shot_singl = this;
+        bulletAmount = bulletInsAmount;
         mainCamera = Camera.main;
     }
     private void Update()
@@ -25,8 +30,17 @@ public class Shot : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Rigidbody2D bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
-            bullet.AddForce(speed, ForceMode2D.Impulse);
+            
+            if(bulletAmount == 0)
+            {
+                Debug.Log("Нет Патронов");
+            }
+            if(bulletAmount > 0)
+            {
+                bulletAmount--;
+                Rigidbody2D bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+                bullet.AddForce(speed, ForceMode2D.Impulse);
+            }   
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -10,6 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _textGameVictory;
     [SerializeField] private GameObject _textGameDefeat;
     [SerializeField] private Text _timer;
+    [SerializeField] private Text _bullet_UI_amount;
+    [SerializeField] private int sceneRestart;
     private void Start()
     {
         sing_UI_Manager = this;
@@ -17,6 +20,7 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         _timer.text = GameManager.sing_GameManager._timerGame.ToString();
+        _bullet_UI_amount.text = Shot.bulletAmount.ToString();
     }
     public void GameObjectSetActiv()
     {
@@ -31,6 +35,10 @@ public class UIManager : MonoBehaviour
     {
         _timer.gameObject.SetActive(false);
         _textGameDefeat.SetActive(true);
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(sceneRestart);
     }
 
 }
