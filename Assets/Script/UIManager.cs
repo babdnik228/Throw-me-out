@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject _textGameDefeat;
     [SerializeField] private Text _timer;
     [SerializeField] private Text _bullet_UI_amount;
-    [SerializeField] private int sceneRestart;
+    [SerializeField] private int sceneToLoad;
     private void Start()
     {
         sing_UI_Manager = this;
@@ -36,9 +36,10 @@ public class UIManager : MonoBehaviour
         _timer.gameObject.SetActive(false);
         _textGameDefeat.SetActive(true);
     }
-    public void RestartGame()
+    public void SceneToLoad()
     {
-        SceneManager.LoadScene(sceneRestart);
+        SceneManager.LoadScene(sceneToLoad);
     }
+   
 
 }

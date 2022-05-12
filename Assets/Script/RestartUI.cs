@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LoadLevel : MonoBehaviour
+
+
+public class RestartUI : MonoBehaviour
 {
-    [SerializeField] private string nameScene;
-    public void LoadLevelButton()
+    public string nameScene;
+    public void ClickRestart()
     {
         SceneManager.LoadScene(nameScene);
     }
