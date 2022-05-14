@@ -40,6 +40,7 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoad);
     }
+    
    
 
 }
