@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 500
   m_Sprite: {fileID: 21300000, guid: 079f18daa82121c49af90529451e4116, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -135,9 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a07da8d35cf1a14c828b0a63a118aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleDead: {fileID: 3111962089297385237, guid: 9784e4b74faa9054d8c768ca0881e2f0, type: 3}
+  _RU_particleDead: {fileID: 3111962089297385237, guid: 2769985677bc7bb4d837322683d4aee9, type: 3}
+  _UC_particleDead: {fileID: 3111962089297385237, guid: 9784e4b74faa9054d8c768ca0881e2f0, type: 3}
   _museDead: {fileID: 5102688445001025421, guid: 278788094143cc24b85620c5bf241d19, type: 3}
-  _imageDead: {fileID: 1047813175002448035, guid: ea6748dfc6a38f048b6a71d2c7e6d62b, type: 3}
+  _RU_imageDead: {fileID: 3882655516362425219, guid: bfd1eaebba53f7d4d99d70154527b9a4, type: 3}
+  _UC_imageDead: {fileID: 2427682680578388217, guid: 8c1d6bb0a180f9a418d178a09431b415, type: 3}
 --- !u!114 &4385937326354039756
 MonoBehaviour:
   m_ObjectHideFlags: 0

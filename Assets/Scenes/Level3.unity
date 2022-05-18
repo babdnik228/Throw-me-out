@@ -1213,6 +1213,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1467593300353667319, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.17787403
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467593300353667319, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467593300353667319, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467593300353667319, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286069739058892592, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevelButton
@@ -1319,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248586024473483931, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.16950624
+      value: 0.10861906
       objectReference: {fileID: 0}
     - target: {fileID: 7248586024473483931, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1327,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7248586024473483931, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.09900001
+      value: 0.055857144
       objectReference: {fileID: 0}
     - target: {fileID: 7248586024473483931, guid: e37c7800618fe5941aa8634dd1d3e22a, type: 3}
       propertyPath: m_AnchorMin.y

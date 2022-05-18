@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7167733106376434409
 Transform:
@@ -47,7 +47,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7167733107610822235
 Transform:
@@ -128,3 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Power: 2
   bulletPrefab: {fileID: 1933281263789437583, guid: 8ad69d90d4744bd40ab0f782eed9d455, type: 3}
+  bulletInsAmount: 0
