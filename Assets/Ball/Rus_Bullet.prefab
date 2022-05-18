@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 3846756570976022337}
   - component: {fileID: 2596233720674991698}
   - component: {fileID: 8574920171309445171}
+  - component: {fileID: 572827871287905658}
   m_Layer: 0
   m_Name: Rus_Bullet
   m_TagString: Ball
@@ -273,3 +274,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5174ed0b129176e4094ed444e7a8ed28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &572827871287905658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933281263789437583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec8f2ca3bb577048bb0c7f723538236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_russian: {fileID: 21300000, guid: 3cca0364de1903149810f99c904e49f9, type: 3}
+  sprite_uc: {fileID: 21300000, guid: 079f18daa82121c49af90529451e4116, type: 3}

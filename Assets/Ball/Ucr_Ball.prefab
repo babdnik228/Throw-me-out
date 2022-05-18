@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5465157070673836349}
   - component: {fileID: 8923696627641358891}
   - component: {fileID: 2279904308598979003}
+  - component: {fileID: 4385937326354039756}
   m_Layer: 0
   m_Name: Ucr_Ball
   m_TagString: Enemy
@@ -137,3 +138,17 @@ MonoBehaviour:
   _particleDead: {fileID: 3111962089297385237, guid: 9784e4b74faa9054d8c768ca0881e2f0, type: 3}
   _museDead: {fileID: 5102688445001025421, guid: 278788094143cc24b85620c5bf241d19, type: 3}
   _imageDead: {fileID: 1047813175002448035, guid: ea6748dfc6a38f048b6a71d2c7e6d62b, type: 3}
+--- !u!114 &4385937326354039756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877400981799981702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec8f2ca3bb577048bb0c7f723538236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_russian: {fileID: 21300000, guid: 3cca0364de1903149810f99c904e49f9, type: 3}
+  sprite_uc: {fileID: 21300000, guid: 079f18daa82121c49af90529451e4116, type: 3}

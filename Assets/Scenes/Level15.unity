@@ -552,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7167733107610822234, guid: 99b38364881a1614c946b8c7fe0a0abc, type: 3}
       propertyPath: bulletInsAmount
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7167733107610822235, guid: 99b38364881a1614c946b8c7fe0a0abc, type: 3}
       propertyPath: m_LocalPosition.x
